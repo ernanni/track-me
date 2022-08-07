@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add eslint --dev
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\bin;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Users\Fabio\AppData\Local\Microsoft\WindowsApps;C:\Users\Fabio\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fabio\AppData\Local\Yarn\bin;C:\Users\Fabio\AppData\Local\Android\Sdk\platform-tools;C:\Users\Fabio\AppData\Local\GitHubDesktop\bin;C:\Users\Fabio\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  18.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Fabio\git\track-server\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "track-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+      "dev": "nodemon src/index.json"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "express": "^4.18.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^6.4.0",
+      "nodemon": "^2.0.16"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
