@@ -9,7 +9,6 @@ const User = mongoose.model('User');
 const router = express.Router();
 
 router.post('/signUp', async (req, res) => {
-  console.log(req.body);
   const { email, password } = req.body;
 
   try {
@@ -40,6 +39,7 @@ router.post('/signIn', async (req, res) => {
     const token = jwt.sign({ userId: user._id }, 'MY_SECRET_KEY');
     res.send({ token });
   } catch (err) {
+    console.log('error:', err);
     res.status(422).send({ error: 'Invalid email or password!' });
   }
 });
